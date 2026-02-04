@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://experience-jackets-warnings-improvement.trycloudflare.com/">
-  <title>Redirecting…</title>
+  <meta charset="UTF-8">
+  <title>DSR OGGY – Maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    *{
+      box-sizing:border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body{
+      margin:0;
+      height:100vh;
+      background: linear-gradient(135deg,#020617,#0f172a,#020617);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      padding:20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1{
+      font-size:38px;
+      margin-bottom:10px;
+      background: linear-gradient(90deg,#38bdf8,#22c55e);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    p{
+      font-size:16px;
+      opacity:0.85;
+      margin-bottom:30px;
+    }
+
+    /* 🔄 Loader */
+    .loader{
+      width:70px;
+      height:70px;
+      border:6px solid rgba(255,255,255,0.15);
+      border-top:6px solid #22c55e;
+      border-radius:50%;
+      margin:0 auto 25px;
+      animation: spin 1s linear infinite;
+    }
+
+    /* 🟢 Pulse dots */
+    .dots span{
+      display:inline-block;
+      width:8px;
+      height:8px;
+      background:#22c55e;
+      border-radius:50%;
+      margin:0 3px;
+      animation: pulse 1.4s infinite ease-in-out both;
+    }
+
+    .dots span:nth-child(1){ animation-delay:0s; }
+    .dots span:nth-child(2){ animation-delay:0.2s; }
+    .dots span:nth-child(3){ animation-delay:0.4s; }
+
+    .footer{
+      margin-top:35px;
+      font-size:12px;
+      opacity:0.6;
+    }
+
+    @keyframes spin{
+      to{ transform:rotate(360deg); }
+    }
+
+    @keyframes pulse{
+      0%,80%,100%{ transform:scale(0); }
+      40%{ transform:scale(1); }
+    }
+
+    @keyframes fadeIn{
+      from{ opacity:0; transform:translateY(15px); }
+      to{ opacity:1; transform:translateY(0); }
+    }
+
+    @media(max-width:480px){
+      h1{ font-size:28px; }
+      p{ font-size:14px; }
+    }
+  </style>
 </head>
+
 <body>
-  Redirecting to DSR Media Server…
+
+  <div class="container">
+    <div class="loader"></div>
+
+    <h1>DSR OGGY</h1>
+    <p>
+      Website under maintenance <br>
+      Please check back soon
+    </p>
+
+    <div class="dots">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="footer">
+      © 2026 DSR OGGY
+    </div>
+  </div>
+
 </body>
 </html>
